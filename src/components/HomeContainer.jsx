@@ -2,6 +2,7 @@ import React from "react";
 import Delivery from "../img/delivery.png";
 import HeroBg from "../img/heroBg.png";
 import { heroData } from "../utils/Data";
+import "./CSS/CreateContainer.css";
 
 const HomeContainer = () => {
   return (
@@ -47,7 +48,7 @@ const HomeContainer = () => {
           className="ml-auto h-420 w-full lg:w-auto lg:h-650 "
           alt="herobg"
         />
-        <div className="w-80% h-full absolute top-0 right-[4.5rem] flex gap-6 flex-wrap items-center justify-center py-4">
+        <div className="data">
           {heroData &&
             heroData.map((n) => (
               <div

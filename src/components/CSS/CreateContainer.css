@@ -16,3 +16,20 @@
     cursor: pointer;
     border-radius: 12px;
 }
+.data{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 4.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    /* padding-left: 20px; */
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
