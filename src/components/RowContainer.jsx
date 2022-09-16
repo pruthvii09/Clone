@@ -17,7 +17,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
       className={`w-full flex items-center gap-4 scroll-smooth my-12 | ${
         flag
           ? "overflow-x-scroll scrollbar-none"
-          : "overflow-x-hidden flex-wrap"
+          : "overflow-x-hidden flex-wrap justify-center "
       }`}
     >
       {data &&
@@ -29,12 +29,16 @@ const RowContainer = ({ flag, data, scrollValue }) => {
             flex flex-col items-center justify-evenly relative"
           >
             <div className="w-full flex items-center justify-between ">
-              <motion.img
-                src={item?.imageURL}
-                alt=""
-                className="w-40 -mt-8 drop-shadow-2xl"
+              <motion.div
+                className="w-40 h-40 -mt-8 drop-shadow-2xl"
                 whileHover={{ scale: 1.25 }}
-              />
+              >
+                <img
+                  src={item?.imageURL}
+                  alt=""
+                  className="w-full h-full object-contain"
+                />
+              </motion.div>
               <motion.div
                 className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center cursor-pointer hover:shadow-md"
                 whileTap={{ scale: 0.75 }}
